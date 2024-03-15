@@ -1,4 +1,4 @@
-# Web Whiteboard Application
+# White Board
 
 This is a simple web-based whiteboard application that allows users to draw, erase, undo, redo, upload images, and download the canvas content as an image. It provides an intuitive interface with various drawing tools and functionalities.
 
@@ -12,7 +12,7 @@ This is a simple web-based whiteboard application that allows users to draw, era
 
 ## Usage
 
-To use the whiteboard application:
+To use the whiteboard:
 
 1. Open the `index.html` file in a web browser.
 2. Use the drawing tools provided in the toolbar to draw or erase on the canvas.
