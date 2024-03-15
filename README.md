@@ -33,4 +33,4 @@ Contributions are welcome! Feel free to submit issues or pull requests for any i
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [MIT License](https://github.com/sanjay-munde/Neumorphic-White-Board/edit/main/LICENSE).
