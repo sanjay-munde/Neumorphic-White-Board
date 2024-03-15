@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+  background-color: #ffffff; /* Light background color */
+}
+
+.tools-container {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tools-content {
+  height: 70%;
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #f0f0f0; /* Same background color as body */
+  border-radius: 20px; /* Soften the edges */
+  transform: translateY(5px);
+  box-shadow: 5px 5px 15px #c4c4c4, -5px -5px 15px #ffffff; /* Soft shadows and highlights */
+}
+
+.tool {
+  height: 55px; /* Adjust height for better visual */
+  width: 55px; /* Adjust width for better visual */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f0f0f0; /* Same background color as body */
+  border-radius: 15px; /* Soften the edges */
+  box-shadow: 5px 5px 15px #c4c4c4, -5px -5px 15px #ffffff; /* Soft shadows and highlights */
+  position: relative;
+}
+
+.tool img {
+  height: 50%; /* Adjust size of icon */
+  width: 50%; /* Adjust size of icon */
+}
+
+.minimize {
+  background: lightskyblue;
+}
+
+.close {
+  background: lightcoral;
+}
+
+.fade {
+  opacity: 0.5;
+}
+
+.tool-options {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 60px;
+  background: #f0f0f0; /* Same background color as body */
+  border-radius: 15px; /* Soften the edges */
+  box-shadow: 5px 5px 15px #c4c4c4, -5px -5px 15px #ffffff; /* Soft shadows and highlights */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 2px;
+}
+
+.hide {
+  display: none;
+}
+
+.pen-size input,
+.eraser-size input {
+  width: 100%;
+}
+
+.pen-colors {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.pen-colors div {
+  height: 15px;
+  width: 14px;
+  border-radius: 50px;
+}
+
+.black {
+  background: black;
+}
+
+.yellow {
+  background: yellow;
+}
+
+.blue {
+  background: blue;
+}
+
+.green {
+  background: green;
+}
+
+.red {
+  background: red;
+}
+
+
+.pen-colors div:hover {
+  box-shadow: none; /* Remove shadow on hover for better feedback */
+}
+
