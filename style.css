@@ -6,7 +6,6 @@
 
 body {
   overflow: hidden;
-  background-color: #ffffff; /* Light background color */
 }
 
 .tools-container {
@@ -17,41 +16,88 @@ body {
 }
 
 .tools-content {
-  height: 70%;
+  height: 40%;
   width: 70%;
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
-  background: #f0f0f0; /* Same background color as body */
-  border-radius: 20px; /* Soften the edges */
+  align-items:center;
+  background: rgba(5, 163, 255, 0.808);
+  border-radius: 10px;
   transform: translateY(5px);
-  box-shadow: 5px 5px 15px #c4c4c4, -5px -5px 15px #ffffff; /* Soft shadows and highlights */
+  box-shadow: 0 5px 10px #191d1db3;
 }
 
 .tool {
-  height: 55px; /* Adjust height for better visual */
-  width: 55px; /* Adjust width for better visual */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #f0f0f0; /* Same background color as body */
-  border-radius: 15px; /* Soften the edges */
-  box-shadow: 5px 5px 15px #c4c4c4, -5px -5px 15px #ffffff; /* Soft shadows and highlights */
+  height: 40%;
+  width: 10%;
   position: relative;
 }
 
 .tool img {
-  height: 50%; /* Adjust size of icon */
-  width: 50%; /* Adjust size of icon */
+  height: 100%;
+  width: 100%;
+}
+
+/* .drawing-container {
+  } */
+
+/* #canvas {
+    background-color: aqua;
+  } */
+
+.sticky {
+  position: absolute;
+  top: 200px;
+  left: 300px;
+  height: 200px;
+  width: 250px;
+  /* background: bisque; */
+}
+
+.sticky-header {
+  height: 13%;
+  background: rgba(5, 163, 255, 0.808);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.sticky-header div {
+  height: 70%;
+  width: 7%;
+  margin-right: 10px;
+  border-radius: 50px;
 }
 
 .minimize {
-  background: lightskyblue;
+  background: rgb(106, 255, 101);
 }
 
 .close {
-  background: lightcoral;
+  background: rgb(247, 46, 46);
 }
+
+.sticky-content {
+  height: 87%;
+  border-bottom-right-radius: 20px;
+  background: rgb(171, 255, 178);
+  outline: none;
+  padding: 10px;
+}
+
+.sticky-image-div {
+  height: 87%;
+}
+
+.sticky-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* .active-tool {
+    transform: scale(1.2);
+  } */
 
 .fade {
   opacity: 0.5;
@@ -61,21 +107,27 @@ body {
   height: 100px;
   width: 100px;
   position: absolute;
+  /* background: aquamarine; */
   top: 60px;
-  background: #f0f0f0; /* Same background color as body */
-  border-radius: 15px; /* Soften the edges */
-  box-shadow: 5px 5px 15px #c4c4c4, -5px -5px 15px #ffffff; /* Soft shadows and highlights */
   display: flex;
+  border-radius: 10px;
   flex-direction: column;
   justify-content: space-evenly;
   padding: 2px;
+  background: aliceblue;
 }
 
 .hide {
   display: none;
 }
 
-.pen-size input,
+/* .pen-size {
+  }
+   */
+.pen-size input {
+  width: 100%;
+}
+
 .eraser-size input {
   width: 100%;
 }
@@ -110,10 +162,5 @@ body {
 
 .red {
   background: red;
-}
-
-
-.pen-colors div:hover {
-  box-shadow: none; /* Remove shadow on hover for better feedback */
 }
 
